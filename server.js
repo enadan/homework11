@@ -9,7 +9,7 @@ var app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-var PORT = 8080;
+var PORT = process.env.PORT || 3000;
 
 app.use(express.static('public'))
 
